@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Working with forms</title> -->
+</head>
+<body>
+    <!-- inputs tag -->
+    <h1>Forms Control</h1>
+    <h2>input and button element</h2>
+    <input type="text">
+    <!-- button tag -->
+    <button>submit</button>
+
+    <!-- The Form element -->
+    <h2>The form Element</h2>
+    <form action="https://www.google.com">
+        <input type="text">
+        <button>submit</button>
+    </form>
+<br>
+    <!-- name and placeholder attribute -->
+    <h2>The name and placeholder attribute</h2>
+    <form action="">
+        <input type="text" name="firsname" placeholder="First Name">
+        <input type="text" name="lastname" placeholder="Last Name">
+        <button>submit</button>
+    </form>
+<br>
+    <!-- The lebel element -->
+    <h2>Label element</h2>
+    <form action="">
+        <label for="firstname">Enter firstname</label>
+        <input type="text" name="firsname" id="firstname" placeholder="First Name">
+        <label for="lastname">Enter lastname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <button>submit</button>
+    </form>
+    <br>
+    <h2>Other types of input</h2>
+    <ul>
+    <form action="">
+    <li><input type="password" placeholder="password" required></li>
+    <li><input type="number" required placeholder="number"></li>
+    <li><input type="date" placeholder="date"></li>
+    <li><input type="color" placeholder="color"></li>
+    <li><input type="url" placeholder="url"></li>
+    <li><input type="email" required placeholder="email"></li>
+    <li><input type="file" placeholder="file"></li>
+    <li><input type="search" placeholder="search"></li>
+    <li><input type="image" placeholder="image"></li>
+    <li><input type="radio" placeholder="radio"></li>
+    <li><input type="range" placeholder="range"></li>
+    </ul>
+    <button>submit</button>
+</form>
+<br>
+<!-- checkboxes, Textareas and range inputs -->
+<h2>Textareas</h2>
+<textarea name="" id="" cols="30" rows="10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium impedit ratione vel dignissimos eveniet cumque, natus tenetur. Nesciunt, amet cupiditate?</textarea>
+<br>
+<h2>checkboxes</h2>
+<form action="">
+    <label for="Tac">Terms and Conditions</label>
+<input type="checkbox" name="terms and condition" id="Tac">
+<button>submit</button>
+</form>
+<br>
+<h2>Range inputs</h2>
+<form action="">
+<input type="range" name="volume of water" min="0" max="10" step="2">
+<button>submit</button>
+</form>
+<br>
+<!-- selects and radio button groupings -->
+<h2>Selects element</h2>
+<form action="">
+    <label for="shirtsize">select your shirt size:</label>
+<select name="shirtsize" id="shirtsize">
+    <option value="s">small</option>
+    <option value="l">large</option>
+    <option value="m">medium</option>
+    <option value="xl">extra large</option>
+</select>
+    <button>submit</button>
+</form>
+    <!-- radio button -->
+    <form action="">
+        <label for="phone">Call Me</label>
+        <input type="radio" id="phone" name="contact" value="phone">
+        <label for="email">Email Me</label>
+        <input type="radio" id="email" name="contact" value="email">
+        <button>submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Understanding named-colors */
+h1 {
+    color: green;
+    background-color: red;
+}
+p {
+    background-color: orange;
+    color: green;
+}
+li {
+    background-color: blue;
+}
+/* Understanding rgb colors */
+td {
+    color: rgb(96, 131, 92);
+    background-color: rgb(77,33,200);
+}
+/* Understanding Hexadecimal colors */
+h3 {
+    color: #0b9a06;
+    background-color: #000;
+}
+h4 {
+    color: #3f7d9a;
+    background-color: #da5c7a;
+}
+/* Understanding RGBa and opacity */
+body {
+    background-color: rgba(9, 187, 80, 0.5);
+    
+}
+h5 {
+    background-color: rgb(173, 50, 93);
+    opacity: 0.5;
+}
+/* Understanding CSS inheritance */
+p {
+    color: aqua;
+    /* border: 1px solid red; */
+}
+span {
+    color:black;
+}
+div {
+    border: 2px solid red;
+}
+em {
+    color: yellow;
+}

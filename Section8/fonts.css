@@ -1,0 +1,30 @@
+/* Understanding font-family, font-size, font-weight, font-style, text-align, letter-spacing, word-spacing, line-height */
+h1 {
+    font-family:"Segoe UI", Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 10px;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+/* Adding Custom forms with google fonts */
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+a {
+    font-style: italic;
+}
+/* Understanding Text-shadows */
+span {
+    font-size: 70px;
+    font-weight: 300;
+    text-shadow: 2px 3px 1px greenyellow, 4px 5px 1px blue, 6px 7px 1px red;
+}

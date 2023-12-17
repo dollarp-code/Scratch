@@ -1,0 +1,23 @@
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(250, 250, 250);
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 400;
+}
+h3 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
+div {
+    width: 55%;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+span {
+    text-shadow: 0 -6.25px #0c2ffb, 0 -12.5px #2cfcfd, 0 6.25px red, 0 12.5px #fefc4b;
+}

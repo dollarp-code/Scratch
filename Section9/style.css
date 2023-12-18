@@ -1,0 +1,42 @@
+/* Understanding text transform and text decoration */
+h1 {
+    text-transform: uppercase;
+    text-decoration-line: line-through;
+    text-decoration-color: aquamarine;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+    /* text-decoration: line-through dotted magenta 3px; */
+}
+/* understading selectors id and class*/
+/* id # */
+#review {
+    background-color: aquamarine;
+    color: red;
+    text-decoration: underline black;
+}
+/* class . */
+.tag {
+    text-decoration: none;
+    color: green;
+}
+/* Understanding list-styling */
+#cast {
+    list-style-type: "\1F44D";
+    list-style-position: inside;
+    list-style-image: ;
+}
+a {
+    text-decoration: none;
+}
+/* Understanding link styling and hover */
+a:visited {
+    color:rgb(221, 16, 16);
+
+}
+a:hover {
+    color:blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+

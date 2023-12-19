@@ -1,0 +1,39 @@
+/* Understanding the universal selector(*) */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+/* Understanding Attribute Selectors */
+input[type='number'] {
+    background-color: red;
+}
+/* Fancy Attribute Selector Syntax */
+a[href*="wiki"] {
+    color: cyan;
+}
+a[href^="#"] {
+    color: darkgray;
+}
+a[href$=".com"] {
+    color: gold;
+}
+/* Grouping Selectors */
+h1, h2, h3, h4 {
+    font-family: "Work Sans", sans-serif;
+}
+.score, .tag, #featured {
+    color: white;
+    background-color: orangered;
+}
+/* Descendent Combinator */
+#cast span {
+    color: greenyellow;
+}
+/* child Combinator */
+ol > li {
+    border: 1px solid brown;
+}
+/* Compound Selectors */
+h2.score {
+    color:aqua;
+}

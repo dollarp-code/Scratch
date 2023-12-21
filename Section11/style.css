@@ -1,0 +1,172 @@
+/* working with borders*/
+h1 {
+    /* border-width: 2px;
+    border-color:purple;
+    border-style: solid;
+    border-bottom-style: dashed;
+    border-top-color:orange;
+    border-right-color: green;
+    border-bottom-color:aquamarine;
+    border-left-color:bisque */
+    
+    border: 2px solid green;
+    /* border-top-color: purple;
+    border-bottom: 3px dashed magenta;
+    */
+}
+
+/* working with width, height and percentage */
+#container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid orange;
+    height: 50%;
+    width: 50%;
+}
+/* Working with padding */
+.link {
+    border: 1px solid brown;
+    /* applies to all sides */
+    padding: 20px;
+    /* top and bottom */
+    padding: 5px 10px;
+    /* top,right,bottom,left */
+    padding: 5px 2px 10px 4px;
+} 
+/* Working with Margin */
+h1 {
+    /* works on all sides */
+    margin: 20px;
+    /* works on top and bottom */
+    margin: 20px 10px;
+}
+a {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+    /* top,right,bottom,left */
+    /* margin: 20px 50px 30px 10px; */
+}
+
+/* working with box model */
+/* div {
+    background-color: purple;
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    border: 5px solid cyan;
+    padding: 10px;
+} */
+
+#alternate {
+    box-sizing: border-box;
+}
+
+/* The Display property (inline,block and inline block) */
+p {
+    font-size: 30px;
+}
+#word {
+    border: 10px solid teal;
+    padding: 20px;
+    margin: 30px;
+    display: block;
+}
+h2 {
+    border: 10px solid teal;
+    padding: 20px;
+    margin: 30px; 
+    display: inline;
+} 
+/* .box {
+    border: 10px solid teal;
+    padding: 20px;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+} */
+/* The display none property */
+h3 {
+    /* display: none; */
+}
+
+/* Margin auto */
+#container {
+    border: 1px solid purple;
+    background-color: lavenderblush;
+    height: 400px;
+    width: 400px;
+}
+#container h3 {
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    margin: 200px auto;
+}
+/* Layout pattern */
+.container {
+    
+    margin-left: 100px;
+}
+/* Understanding min-width and max-width */
+.boxx {
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 2px solid red;
+    margin: 0 auto;
+    min-width: 50%;
+    max-width: 70%;
+
+}
+
+/* Understanding border radius */
+.box2 {
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /* Applied to all four radius  */
+    border-radius: 20px;
+    /* short hand */
+    border-radius: 20px 10px 30px 5px;
+    /* specifying the particular radius */
+    border-top-right-radius: 50px;
+    /* border-bottom-left-radius: ;
+    border-top-left-radius: ;
+    border-bottom-left-radius: ; */
+
+}
+
+/* Box shadows */
+.box3 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: -10px -2px 10px rgba(0,0,45,0.5), 10px 2px 10px rgba(0,45,0.5);
+}
+
+/* Working with overflow (hidden, visible, scroll) */
+.box4 {
+    border: 4px solid olive;
+    height: 300px;
+    width: 300px;
+    font-size: 40px;
+    margin: 100px auto;
+    overflow: scroll;
+
+}
+#yo {
+    width: 400px;
+    display: inline-block;
+    background-color: orange;
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: #463d36;
+    font-family: sans-serif;
+}
+.box {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px;
+}
+.box h2 {
+    text-transform: uppercase;
+    color: #a6192e;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+.box h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 100;
+}
+.box p {
+    font-size: 28px;
+    text-transform: none;
+
+}
+.box button {
+    background-color: #463d36;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 40px;
+    border-radius: 20px;
+}

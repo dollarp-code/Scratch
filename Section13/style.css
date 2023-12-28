@@ -1,0 +1,73 @@
+/* The sibling Combinator*/
+    /* The Adjacent Combinator (+)- it selects element that are directly after the first element */
+/* h2 + p {
+    color: blueviolet;
+} */
+/* The sibling combinator (~) - The ~ combinator selects siblings. The 2nd element must follow the 1st element (immediately or not), and they must share the same parent.  */
+
+/* h2 ~ p {
+    color:brown;
+} */
+
+/* Working pseudo-classes */
+/* h2:hover {
+    color: bisque;
+}
+input:disabled {
+    background-color: red;
+}
+input:placeholder-shown {
+    background-color: red;
+}
+a:visited {
+    color: olivedrab;
+} */
+/* li:first-of-type {
+    border: 1px solid magenta;
+} */
+/* li:last-of-type {
+    border: 1px solid magenta;
+} */
+/* li:nth-of-type(2n) {
+    border: 1px solid black;
+}
+button:active {
+    background-color: pink;
+}
+input:focus {
+    border: 5px solid blue;
+}
+body:not(h1,h2,h3) {
+    border: 1px solid yellowgreen;
+} */
+
+/* Styling Pseudo-Elements */
+/* p::first-line {
+    color: blue;
+} */
+p::first-letter {
+    color: blue;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+input::placeholder {
+    color: black;
+    opacity: 0.2;
+    font-weight: bold;
+}
+p::selection {
+    color:chartreuse;
+    background-color: red;
+}
+        /* The basics of specificity */
+        /* 
+        1. Inline styles
+            2. id selectors(0)
+                3. class/attribute/Pseudo-class (0)
+                    4. type/Pseudo-elements (0) */
+
+/*The  Cascade
+1. importance (!important)
+    2. Origin - browser default, custom styles
+        3. specificity
+            4. position */

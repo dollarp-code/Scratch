@@ -1,0 +1,88 @@
+/* Working with background-image */
+.box {
+    border: 2px solid red;
+    height: 450px;
+    width: 900px;
+    background-color: purple;
+    background-image: url("images/people.jpg");
+
+    /* Controlling background-repeat,
+    : repeat,
+    : no-repeat,
+    : repeat-x,
+    : repeat-y properties */
+    background-repeat: no-repeat;
+
+    /* Sizing our Background
+    Background-size
+    : cover;
+    : contain;*/
+    background-size: cover;
+
+    /* Positioning Background
+    background-position 
+    : top
+    : left
+    : right
+    : bottom
+    : center */
+    background-position: top left;
+
+}   
+
+    /* Working with background-clip properties
+    : border-box
+    : content-box
+    : padding-box */
+    .box2 {
+        border: 20px dashed red;
+        height: 450px;
+        width: 450px;
+        background-color: purple;
+        background-image: url("images/woman.jpg");
+        background-clip: padding-box;
+    }
+
+    /* working with background gradients
+    syntax:
+    background-image: linear-gradient() 
+    background-image: radial-gradient() 
+    background-image: conic-gradient() */
+
+    .linear {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        background-image: linear-gradient(90deg, #870000 50%, #190A05);
+    }
+    .radial {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        background-image: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    .conic {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        background-image: conic-gradient( 
+            red 6deg, orange 6deg 18deg, yellow 18deg 45deg, 
+            green 45deg 110deg, blue 110deg 200deg, purple 200deg);
+    }
+
+    .repeat-conic {
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        background: repeating-conic-gradient(
+    from 45deg at 10% 50%,
+    brown 0deg 10deg,
+     darkgoldenrod 10deg 20deg,
+     chocolate 20deg 30deg
+    );
+    }
+    /* working with css filter */
+    img {
+        width: 600px;
+        filter: hue-rotate(40deg);
+    }

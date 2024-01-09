@@ -1,0 +1,106 @@
+/* Introducing Positioning - specifies where in the document an element will go. Can be fine-tuned from there with the 
+top, 
+right, 
+bottom, 
+left, and 
+z-index properties*/
+
+/* position values
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky; */
+
+/* static - The default value for position, top,right,bottom,left,z-index have no effect */
+
+p {
+    border: 2px solid black;
+    background-color: blue;
+    font-size: 2rem;
+    margin: 32px;
+    position: static;
+    top: 20px;
+    left: 10px;
+}
+
+/* relative- elements fits in the normal flow of the document, but top, right, left, bottom, z-index can be used to scoot the element from its default spot. Even if the element is offset, its original space in the document is maintained */
+
+/* .box {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.special {
+    position: relative;
+    top: 20px;
+    right: 10px;    
+} */
+
+/* Z-index specifies the elevation of an element relative to other elements */
+
+.box {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: #00ff48;
+    display: inline-block;
+    position: relative;
+    box-shadow: 10px 10px rgba(71, 40, 40, 0.2);
+}
+.special {
+    background-color: rgb(56, 211, 71);
+    position: relative;
+    right: 30px;
+    z-index: 1;    
+}
+.special2 {
+    background-color: rgb(113, 188, 98);
+    position: relative;
+    right: 60px;
+    z-index: 2;    
+}
+span {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Absolute positioning- element is removed from normal document flow, and is now relative to nearest parent element with an explicit position property
+If no parent has a position property other than default (static), it's relative to the root container
+No space is left where it used to be*/
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    display: inline-block;
+    position: relative;
+}
+.s-box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blanchedalmond;
+    top: 85px;
+    left: 90px;  
+}
+
+    /* fixed- element is removed from normal document flow, and is positioned relative to root container element.
+    No space is left where it used to be.
+    when you scroll, it will stay in place */
+
+    h1 {
+        background-color: orchid;
+        color: white;
+        font-size: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        text-align: center;
+        padding: 20px;
+        z-index: 3;
+    }

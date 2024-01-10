@@ -1,0 +1,41 @@
+body {
+    
+    background: linear-gradient(to bottom right, #cbb4d4, #20002c);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    color: grey;
+    font-size: 1.2rem;
+    background-color: white;
+    background-origin: padding-box;
+    border: none;
+    border-radius: 0.2rem;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.btn1 {
+    box-shadow: 4px 12px 18px -3px rgba(0,0,0,0.77);
+}
+
+.btn1:hover {
+    transform: translatey(-5px);
+}
+
+.btn2 {
+    box-shadow: 9px 11px 22px 0px rgba(0,0,0,0.69);
+}
+.btn2:hover {
+    transform: scale(0.95);
+}

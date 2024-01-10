@@ -1,0 +1,50 @@
+/* Animation types
+1. Transition- is simply an animation from one state to a second state
+syntax-
+transition: <property> <duration> <timing-function> <delay>;
+2. Traditional keyframe animations-is simply an animation where you can set any number of steps and have differnt things happening one after the other */
+
+
+/* transition: <property> <duration> <timing-function> <delay>; */
+.btn {
+    padding: 10px 20px;
+    background-color: aquamarine;
+    border-radius: 4px;
+    color: orangered;
+    transition: background-color 1s ease-in, color 1s ease-in;
+
+}
+
+.btn:hover {
+    background-color: cornsilk;
+    color: black;
+}
+
+
+/* timing function
+ease
+ease-in
+ease-out
+ease-in-out
+linear
+cubic-bezier() */
+
+/* Introducing Transform property
+Syntax: transform: translate(x,y)
+                 : rotate(x,y)
+                 : scale(x,y) */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    display: inline-block;
+
+}
+
+.first {
+    background-color: gold;
+    /* transform-origin: top right; */
+    transform: translate(200px, 100px) rotate(45deg);
+}
+
+/* transform-origin: center, bottom, left, top, right */

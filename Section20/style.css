@@ -1,0 +1,39 @@
+    /* Flexbos- Flexbox is a layout for laying out items in rows and columns.
+    main axis and cross axis */
+
+    /* Working with display: flex and flex axis */
+   
+   
+   h1 {
+    font-size: 4rem;
+    text-align: center;
+   }
+    .container {
+        width: 1200px;
+        height: 1000px;
+        border: 4px solid black;
+        margin: 40px auto;
+        display: flex;
+        /* flex-direction: row, column, row-reverse, column-reverse */
+        flex-direction: column;
+        /* flex-wrap: wrap, nowrap, wrap-reverse */
+        flex-wrap: wrap;
+        /* justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly, right, left (main axis)  */
+        justify-content: flex-start; 
+        /* align-items: flex-start, flex-end, center, stretch (cross axis) */
+        align-items: flex-end;
+        /* align-content: flex-end, flex-start, center, space-between, space around. it controls multiple rows and columns (cross axis) wrap must be turned on */
+        /* align-content: space-around; */
+        
+
+    }
+        /* align-self: flex-end, flex-start */
+    .special {
+        align-self: flex-start;
+    }
+    .box {
+        width: 250px;
+        height: 150px;
+        font-size: 4rem;
+        text-align: center;
+    }

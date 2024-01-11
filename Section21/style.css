@@ -1,0 +1,65 @@
+
+    /* working with flex-grow, working with flex-shrink  */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+   }
+    .container {
+        width: 70%;
+        height: 1000px;
+        border: 4px solid black;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    /* .sidebar {
+        background-color: palegoldenrod;
+        width: 200px;
+        flex-grow: 1;
+        flex-shrink: 2;
+    } */
+
+    p {
+        background-color: cyan;
+        margin: 0;
+        /* width: 1000px; */
+        /* flex-basis: 1000px;
+        flex-grow: 1; */
+        flex: 1 2 1000px;
+
+    }
+    /* flex-basis: sets the width in a row layout and also set the height in a column layout */
+
+    /* The Flex shorthand is used for setting flex-grow, flex-shrink and flex-basis */
+
+
+    /* working with order */
+    .container2 {
+        width: 70%;
+        height: 1000px;
+        border: 4px solid black;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .box {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin: 30px;
+        height: 200px;
+        flex: 1;
+        background-color: violet;
+    }
+
+    .special {
+        background-color: black;
+        order: -1;
+    }

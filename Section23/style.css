@@ -1,0 +1,23 @@
+body {
+    background-color: red;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: orange;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* Media features:
+width, min-width, max-width
+height, min-height, max-height
+orientation: landscape, potrait
+resolution, min-resolution, max-resolution: 10dpi */
+
+/*Medis queries logical operators
+and, or, not */

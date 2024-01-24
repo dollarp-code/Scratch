@@ -5,7 +5,10 @@
     background-color: black;
     box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* working with grid-template-columns */
+    grid-template-columns: 1fr 1fr;
+    /* working with grid-template-rows */
+    grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 
 .box {

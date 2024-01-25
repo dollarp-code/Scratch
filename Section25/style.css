@@ -20,8 +20,16 @@
     grid-template-rows: repeat(2, 1fr); */
 
     /* working with grid-gap */
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    /* grid-template: repeat(4, 1fr) / repeat(4, 1fr); */
     /* gap: 10px 20px; */
+
+    /* working with grid-template-areas */
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d d";
 }
 
 .box {
@@ -33,17 +41,33 @@
   /* positioning grid items */
 
   .first {
-    /* grid-column-start: 1; */
+    /* grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 3; */
+    grid-area: a;
   }
 
   .second {
-    /* using the shorthand and the span keyword */
+    /* using the shorthand and the span keyword
     grid-column: 2 / span 2;
-    grid-row: span 3;
+    grid-row: span 3; */
+    grid-area: b;
   }
 
+  .third {
+    grid-area: c;
+  }
+
+  .fourth {
+    grid-area: d;
+  }
   /* grid-area shorthand property syntax -
   grid-area: row-start / column-start / row-end / column-end*/
+
+  
+    /* naming grid lines
+    syntax- grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr */
+    /* syntax- grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr */
+    
+  

@@ -1,6 +1,6 @@
 .container {
     height: 700px;
-    width: 80%;
+    width: 700px;
     margin: 200px auto;
     background-color: black;
     box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
@@ -20,8 +20,8 @@
     grid-template-rows: repeat(2, 1fr); */
 
     /* working with grid-gap */
-    grid-template: 1fr 1fr / repeat(4, 1fr);
-    gap: 10px 20px;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    /* gap: 10px 20px; */
 }
 
 .box {
@@ -30,3 +30,20 @@
     text-align: center;
   }
 
+  /* positioning grid items */
+
+  .first {
+    /* grid-column-start: 1; */
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .second {
+    /* using the shorthand and the span keyword */
+    grid-column: 2 / span 2;
+    grid-row: span 3;
+  }
+
+  /* grid-area shorthand property syntax -
+  grid-area: row-start / column-start / row-end / column-end*/

@@ -70,4 +70,13 @@
     syntax- grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr */
     /* syntax- grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr */
     
-  
+
+  /* Dynamic grid
+  grid-auto-flow: row, column, row-dense, column-dense */
+
+  /* working with grid-auto
+    grid-template: repeat(2, 200px) / repeat(4, 200px)
+    grid-auto-columns: 200px*/
+
+    /* working with responsive Grid- auto-fill and autofit 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))*/

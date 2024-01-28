@@ -1,11 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+
 h1 {
     display: inline-block;
-    animation-name: spin;
+    /* animation-name: spin;
     animation-duration: 2s;
     animation-direction: alternate;
-    /* animation-delay: 2s; */
     animation-iteration-count: 2;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
+    /* using animation shorthand */
+    animation: spin 1s infinite alternate;
+    animation-play-state: paused;
+    color: white;
 }
 .box {
     width: 300px;
@@ -16,15 +29,37 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: spin;
+    /* using shorthand for animation */
+    animation: 3s move alternate-reverse infinite ease-in-out;
+    animation-play-state: paused;
+    /* animation-name: spin;
     animation-duration: 2s;
     animation-direction: alternate;
-    /* animation-delay: 2s; */
+    animation-delay: 2s;
     animation-iteration-count: 2;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
-/* @keyframes move {
+.spinner {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border: 7px solid #90A4AE;
+    border-top-color: #6011e8;
+    border-radius: 50%;
+    animation: 1s spin 3 ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
     0% {
         transform: translatex(0);
     }
@@ -37,7 +72,7 @@ h1 {
         transform: translatex(0%);
         background-color: chartreuse;
     }
-} */
+}
 
 /* @keyframes rainbow {
     0% {
@@ -69,3 +104,4 @@ h1 {
         transform: rotate(360deg);
     }
 }
+

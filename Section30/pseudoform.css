@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle {
+    opacity: 0;
+}
+
+.label {
+    position: relative;
+    padding-left: 5rem;
+}
+
+.label::before {
+    content: "";
+    background-color: #c6d0cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    transition: background-color 0.2s;
+}
+
+.label::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    transition: transform 0.2s;
+}
+
+.toggle:checked + .label::before{
+    background-color: green;
+}
+.toggle:checked + .label::after{
+    transform: translateX(32px);
+}

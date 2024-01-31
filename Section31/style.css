@@ -16,3 +16,10 @@ h1 {
 button {
     color: var(--brand-color);
 }
+
+
+@media only screen and (max-width: 500px) {
+    :root {
+        --brand-color: rgb(34, 86, 44);
+    }
+}
